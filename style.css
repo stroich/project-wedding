@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: beige;
+}
+html {
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+.fp-tableCell{
+   display: block;
+}
+.header{
+    background-color: rgb(208 207 205 / 50%);
+    color:  #faf6ed;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-title{
+    align-items: center;
+    font-family: 'Marck Script', cursive;
+    margin-left: 10px;
+    font-size: 24px;
+}
+.burger-svg{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    fill:  #faf6ed;
+    cursor: pointer;
+}
+.burger-menu{
+    display: none;
+    box-shadow: 0 0 30px #ffffff;
+}
+.x{
+    margin-top: 5px;
+    margin-right: 8px;
+    font-size: 23px;
+    cursor: pointer;
+    width: 30%;
+    text-align: end;
+}
+.open{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(87 99 102 / 90%);
+    z-index: 3;
+}
+.close{
+    display: none;
+}
+.menu{
+    text-align: start;
+    width: 70%;
+
+}
+.menu-item{
+    margin: 10px 5px;
+}
+.menu-item a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 992px;
+    margin: 0 auto;
+    box-shadow: 0 0 50px #ffffff;
+    background-color: #faf6ed;
+}
+.photo{
+    background-image: url("assets/photoNewlyweds.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+}
+.photo-name{
+    color: #faf6ed;
+    font-size: 35px;
+    padding-top: 45px;
+    margin-bottom: 20px;
+    font-family: 'Marck Script', cursive;
+}
+.photo-data{
+    color:  #faf6ed;
+    font-size: 20px;
+}
+.photo-details{
+    color:  #faf6ed;
+    margin-top: 25px;
+}
+.invitation{
+    background-image: url("assets/5.png");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: rgb(60 0 60);
+    text-align: center;
+}
+.details-wrap{
+    background-image: url("assets/6.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+.wrap{
+    height: 100%;
+}
+
+.invitation-title{
+    padding-top: 105px;
+    padding-bottom: 10px;
+    font-size: 34px;
+    font-family: 'Marck Script', cursive;
+}
+.invitation-text {
+    margin: 0 20px;
+    line-height: 21px;
+    font-size: 18px;
+}
+.invitation-date{
+    margin: 15px 0;
+}
+.invitation-place{
+    margin-bottom: 10px;
+}
+.invitation-map{
+    margin-bottom: 10px;
+}
+.invitation-timing{
+    margin-top: 30px;
+}
+.invitation-timing-title{
+    margin-bottom: 20px;
+}
+.row{
+    margin: 2px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.col{
+    width: 50%;
+    margin: 0 auto;
+}
+.col-img{
+    background-image: url("assets/icon.jpeg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.col-img-1{
+    background-position-x: 209px;
+}
+.col-img-2{
+    background-position-x: 167px;
+}
+.col-img-3{
+    background-position-x: 78px;
+}
+.col-img-4{
+    background-position-x: 121px;
+}
+.col-img-5{
+    background-position-x: 32px;
+}
+.details{
+    background-color: #faf6ed;
+    background-image: url("assets/5.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    height: 100vh;
+    color: rgb(60 0 60);
+    text-align: center;
+}
+.details-title{
+    padding-top: 120px;
+    font-family: 'Marck Script', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.details-text {
+    line-height: 21px;
+    font-size: 18px;
+    margin: 10px 20px;
+}
+.details-colors{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.details-color{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+.alcohol{
+    width: 105px;
+    height: 55px;
+    background-image: url("assets/3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto 10px;
+}
+.details-color:nth-last-of-type(1){
+    background-color: #f3dbc3;
+}
+.details-color:nth-last-of-type(2){
+    background-color: #e3e5d7;
+}
+.details-color:nth-last-of-type(3){
+    background-color: #adb794;
+}
+.details-color:nth-last-of-type(4){
+    background-color: #c7d3d2;
+}
+.details-color:nth-last-of-type(5){
+    background-color: #d7c6ac;
+}
+@media (min-width: 768px){
+    .photo{
+        background-image: url("assets/background.jpg");
+        background-position: center;
+    }
+    .photo-name{
+        color: rgb(60 0 60);
+        padding-top: 220px;
+        font-size: 60px;
+    }
+    .photo-data{
+        color: rgb(60 0 60);
+    }
+    .burger-svg{
+        fill: rgb(60 0 60);
+    }
+    .photo-details p{
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: rgb(60 0 60);
+        font-size: 20px;
+    }
+    .header{
+        background-color: rgb(245 245 220 / 70%);
+        color: rgb(60 0 60);
+    }
+    .burger{
+        text-align: end;
+        margin-right: 20px;
+    }
+    .burger-menu{
+        background-color: rgb(245 245 220 / 80%);
+        z-index: 3;
+    }
+    .menu-item{
+        margin: 4px 7px;
+    }
+    .menu-item a{
+        color: rgb(60 0 60);
+        text-decoration: none;
+    }
+    .col{
+        font-size: 20px;
+    }
+    .invitation{
+        background-image: url("assets/2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+    }
+    .invitation-timing-title{
+        margin-bottom: 30px;
+    }
+    .invitation-timing-text{
+        display: flex;
+        justify-content: center;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+    .invitation-text{
+        margin: 0 220px;
+    }
+    .details{
+        background-image: url("assets/1.png");
+    }
+    .details-wrap{
+        background-image: none;
+    }
+    .details-title{
+        padding-top: 190px;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .alcohol{
+        margin:0 auto;
+    }
+    .details-text{
+        margin: 10px 185px;
+    }
+    .photo-details{
+        display: block;
+    }
+    .open{
+        display: flex;
+        position: relative;
+    }
+    .header-menu{
+        width: 30%;
+    }
+
+}
